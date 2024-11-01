@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/raca-pura.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff",
         "versionCode": "2"
       },
