@@ -1,50 +1,62 @@
-# Welcome to your Expo app 👋
+📱 PetAdopt
+PetAdopt é um aplicativo mobile desenvolvido com Expo que conecta pessoas interessadas em adotar animais de estimação com ONGs e lares temporários. A aplicação oferece uma experiência simples, segura e prática, utilizando Firebase para persistência de dados e Clerk para autenticação.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🛠️ Tecnologias Utilizadas
+React Native (via Expo)
+Firebase (Firestore, Authentication, Storage)
+Clerk (Autenticação e gerenciamento de usuários)
+Expo (SDK para desenvolvimento mobile)
+🌟 Funcionalidades
+Cadastro de Usuários: Usuários podem se registrar e fazer login com segurança via Clerk.
+Favoritos: Salve os pets favoritos para acompanhar as atualizações.
+Cadastro de Pets: ONGs e cuidadores podem cadastrar animais para adoção.
+Persistência de Dados: Informações armazenadas de forma segura no Firebase.
+⚙️ Como Executar o Projeto
+Pré-requisitos
+Certifique-se de ter instalado:
 
-## Get started
+Node.js (versão recomendada: LTS)
+Expo CLI (npm install -g expo-cli)
+Firebase CLI (opcional para testes avançados)
+Passos
+Clone o repositório:
 
-1. Install dependencies
+bash
+Copiar código
+git clone https://github.com/seu-usuario/petadopt.git
+cd petadopt
+Instale as dependências:
 
-   ```bash
-   npm install
-   ```
+bash
+Copiar código
+npm install
+Configure os serviços:
 
-2. Start the app
+Crie um projeto no Firebase Console e obtenha as credenciais do Firebase.
+Configure o Clerk seguindo as instruções na documentação oficial.
+Substitua os valores no arquivo config.js:
 
-   ```bash
-    npx expo start
-   ```
+javascript
+Copiar código
+export const firebaseConfig = {
+  apiKey: "SUA_API_KEY",
+  authDomain: "SEU_AUTH_DOMAIN",
+  projectId: "SEU_PROJECT_ID",
+  storageBucket: "SEU_STORAGE_BUCKET",
+  messagingSenderId: "SEU_MESSAGING_SENDER_ID",
+  appId: "SEU_APP_ID"
+};
 
-In the output, you'll find options to open the app in a
+export const clerkConfig = {
+  frontendApi: "SUA_FRONTEND_API",
+};
+Inicie o aplicativo:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+bash
+Copiar código
+expo start
+Teste no dispositivo:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Use o QR code exibido no terminal ou no navegador para abrir o app no Expo Go (disponível para Android/iOS).
+📋 Licença
+Este projeto está licenciado sob a licença MIT.
