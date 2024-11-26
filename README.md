@@ -23,7 +23,7 @@ Clone o repositório:
 
 bash
 Copiar código
-git clone https://github.com/seu-usuario/petadopt.git
+git clone https://github.com/Paulos19/adoptPet.git
 cd petadopt
 Instale as dependências:
 
